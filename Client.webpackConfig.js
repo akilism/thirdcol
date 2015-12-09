@@ -47,8 +47,8 @@ export default {
     loaders: [
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract("style", "css", {
-          publicPath: ""
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader!autoprefixer-loader', {
+          publicPath: '',
         }),
       },
       {
@@ -63,14 +63,30 @@ export default {
       {
         test: /\.(png|jpe?g|gif)$/,
         loader: 'file-loader',
+        query: {
+          name: '[name].[hash].[ext]',
+        },
+      },
+      {
+        test: /\.mp3$/,
+        loader: 'file-loader',
+        query: {
+          name: '[name].[hash].[ext]',
+        },
       },
       {
         test: /\.mp4$/,
         loader: 'file-loader',
+        query: {
+          name: '[name].[hash].[ext]',
+        },
       },
       {
-        test: /\.(eot|woff2?|ttf)$/,
+        test: /\.(otf|eot|woff2?|ttf|svg)$/,
         loader: 'file-loader',
+        query: {
+          name: '[name].[hash].[ext]',
+        },
       },
       {
         test: /\.txt$/,
