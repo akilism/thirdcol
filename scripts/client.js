@@ -1,3 +1,4 @@
+import "babel-polyfill";
 import {default as React} from "react";
 import {default as ReactDOM} from "react-dom";
 
