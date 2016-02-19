@@ -1,0 +1,187 @@
+body {
+  font-size: 16px;
+  font-family: "Open Sans", Helvetica, Arial;
+}
+
+.root {
+  position: relative;
+}
+
+.navbar {
+  width: 100%;
+  margin: 0;
+}
+
+.title-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-size: cover;
+  width: 100vw;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 15vw;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
+  font-family: "TradeGothic-BoldCondTwenty", sans-serif;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
+}
+
+.page-header {
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: -3px 0 30px 0;
+}
+
+.page-header .title {
+  font-size: 5.5rem;
+  margin-bottom: 15px;
+}
+
+.page-header .subtitle {
+  font-size: 1rem;
+}
+
+
+
+.stories-layout {
+  margin: -2px 0 0 0;
+}
+
+.stories {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 60px;
+}
+
+.newest-stories {
+  flex: 1;
+}
+
+.featured-stories {
+  flex: 2;
+  margin: 0 40px;
+}
+
+.popular-stories {
+  flex: 1;
+}
+
+.section-title {
+  font-size: 1.85rem;
+  text-align: center;
+  font-family: "TradeGothic-BoldCondTwenty", sans-serif;
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom: 30px;
+}
+
+.story {
+  border-bottom: 1px solid #dfdfdf;
+  padding: 0 0 15px 0;
+  margin: 0 0 15px 0;
+}
+
+.story .media {
+  background: #dadada;
+  height: 256px;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+}
+
+.featured-stories .story .media {
+  background: #dadada;
+  height: 480px;
+}
+
+.story .title {
+  font-size: 1.25rem;
+  color: black;
+  text-shadow: none;
+  margin: 0 0 10px 0;
+}
+
+.featured-stories .story .title {
+  font-size: 2rem;
+}
+
+.story .byline {
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.story .dek {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.story .date {
+  font-size: 0.8rem;
+  color: #4d4d4d;
+}
+
+.story .image {
+  width: 100%;
+}
+
+.map {
+  height: 1000px;
+}
+
+
+.map-layout .page-header {
+  height: 30vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: -3px 0 30px 0;
+}
+
+.map-elements {
+  position: relative;
+}
+
+
+.map-tray {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 10000;
+  padding: 5px 15px;
+  border-radius: 3px;
+  min-width: 320px;
+  height: 1000px;
+}
+
+.story-filters {
+
+}
+
+
+.filter-item {
+  font-size: 2rem;
+  color: #fff;
+  line-height: 1.5;
+}
