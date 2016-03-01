@@ -89,10 +89,12 @@ export default class MapLayout extends Component {
   }
 
   componentDidMount() {
-    this.map = L.map(this.refs["mapElem"]).setView([38.182207, 27.144554], 5);
+    this.map = L.map(this.refs["mapElem"]).setView([ 50.973325, 1.883172 ], 18);
 
-    L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
-                { maxZoom: 20,
+
+// http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}
+    L.tileLayer('http://khm3.google.com/kh/v=198&x={x}&y={y}&z={z}&s=Galileo ',
+                { maxZoom: 18,
                   subdomains:['mt0','mt1','mt2','mt3']
                 })
       .addTo(this.map);
